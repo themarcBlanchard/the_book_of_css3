@@ -1,0 +1,33 @@
+* CSS has has a way to dealing with media types for quite some time using the media attribute on the link account
+    <link href="style.css" rel="stylesheet" media="screen"/>
+But this approach has too many problems, the list of types is too many. Therefore, the solution is media queries
+The queries lets you provide specific styles for the user's device.
+
+* Media queries detect devices based on their attributes. As you specify a screen size, you also specify which styles you want 
+to apply for that screen size. 
+
+## Syntax ##
+* A media query sets a pa rameter that e=enables associated style rules if the device used to view the page has properties
+that match that parameter. You can use media queries in 3 ways. The first is to call it in the 'link' tag
+    <link href="file" rel="stylesheet" media="logic media and (expression)"/>
+
+* The second way is to call an @import directive:
+    @import url('file') logic media and (exression);
+
+* The third is to use media queries in an embedded style element or in the style sheet itself with the extended @media rule:
+    @media logic media and (expression) { rules }
+
+* The media attibutes declares the media type. The most common are 'screen' and 'print'.
+If you're writing rules that is for all media types, you can specify it like this:
+    @media all  and (expression) { rules }
+
+## Media Features ## 
+* Media features are information about the device that's being used to display the web page: it's dimensions, resolutions and so on. 
+That expression could be:
+    "apply these styles only on devices that have a screen wider than 480px"
+
+## Width and Height ##
+* The width media decribes the width of the rendering viewport of the specified media type.
+Here's the basic syntax:
+    @media all and (width: 600px) { rules }
+In this case, rules are applied to browsers that has the width of 600 pixels.

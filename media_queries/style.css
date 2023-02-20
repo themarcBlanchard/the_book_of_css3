@@ -1,0 +1,7 @@
+/* Media Queries */
+@media all and (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+}
